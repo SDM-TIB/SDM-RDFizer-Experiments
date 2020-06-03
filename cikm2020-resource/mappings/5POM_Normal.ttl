@@ -6,9 +6,9 @@
 @prefix rev: <http://purl.org/stuff/rev#> .
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix base: <http://tib.de/SDM-RDFizer/mapping#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix iasis: <http://project-iasis.eu/vocab/> .
+@base <http://tib.de/SDM-RDFizer/mapping#> .
 
 <#TriplesMap1>	
 	rml:logicalSource [ rml:source "/data/data.csv";
