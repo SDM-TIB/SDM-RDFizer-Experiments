@@ -17,7 +17,7 @@ do
 		total=0
 		for mapping in "${mapping[@]}"
 		do
-			sed -i "s/mappings\/.*.ttl/mappings\/${mapping}/g" /rocketrml/simple-index.js
+			sed -i "s/mappings\/.*.ttl/mappings\/${mapping}/g" /scripts/simple-index.js
 			for j in 1 2 3 4 5
 			do
 				echo "---Running $config size $size in $type for time $j with mapping $mapping---"

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sed -i 's/enrichment: no/enrichment: yes/g' /sdmrdfizer/config.ini
+sed -i 's/enrichment: no/enrichment: yes/g' /scripts/config.ini
 echo "config,size,type,mapping,results,time">>/results/results-times.csv
 echo "config,size,type,mapping,run,results,time">>/results/results-times-detail.csv
 declare -a configs=("enrich" "noenrich")
@@ -18,12 +18,12 @@ do
 			total=0
 			for mapping in "${mapping[@]}"
 			do
-				sed -i "s/mappings\/.*.ttl/mappings\/${mapping}/g" /sdmrdfizer/config.ini
+				sed -i "s/mappings\/.*.ttl/mappings\/${mapping}/g" /scripts/config.ini
 				for j in 1 2 3 4 5
 				do
 					echo "---Running $config size $size in $type for time $j with mapping $mapping---"
 					start=$(date +%s.%N)
-					timeout 5h python3 /sdmrdfizer/rdfizer/run_rdfizer.py /sdmrdfizer/config.ini
+					timeout 5h python3 /sdmrdfizer/rdfizer/run_rdfizer.py /scripts/config.ini
 					exit_status=$?
 					finish=$(date +%s.%N)
 					dur=$(echo "$finish - $start" | bc)
@@ -49,6 +49,6 @@ do
 			done
 		done
 	done
-	sed -i 's/enrichment: yes/enrichment: no/g' /sdmrdfizer/config.ini	
+	sed -i 's/enrichment: yes/enrichment: no/g' /scripts/config.ini	
 done
 rm /data/*.csv

@@ -20,7 +20,7 @@ do
 			do
 				echo "---Running $config size $size in $type for time $j with mapping $mapping---"
 				start=$(date +%s.%N)
-				timeout 5h java -jar rmlmapper -m /mappings/${mapping} -o /results/output.nt -d
+				timeout 5h java -jar rmlmapper/rmlmapper.jar -m /mappings/${mapping} -o /results/output.nt -d
 				exit_status=$?
 				finish=$(date +%s.%N)
 				dur=$(echo "$finish - $start" | bc)
