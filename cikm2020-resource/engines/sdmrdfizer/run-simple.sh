@@ -23,7 +23,7 @@ do
 				do
 					echo "---Running $config size $size in $type for time $j with mapping $mapping---"
 					start=$(date +%s.%N)
-					timeout 5h python3 /sdmrdfizer/rdfizer/run_rdfizer.py /scripts/config.ini
+					timeout 5h python3 /sdmrdfizer/run_rdfizer.py /scripts/config.ini
 					exit_status=$?
 					finish=$(date +%s.%N)
 					dur=$(echo "$finish - $start" | bc)
