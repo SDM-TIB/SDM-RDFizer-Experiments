@@ -11,7 +11,7 @@
 @prefix iasis: <http://project-iasis.eu/vocab/> .
 
 <#TriplesMap1>	
-	rml:logicalSource [ rml:source "data.csv";
+	rml:logicalSource [ rml:source "/data/data.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [

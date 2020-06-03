@@ -11,7 +11,7 @@
 @prefix iasis: <http://project-iasis.eu/vocab/> .
 
 <#TriplesMap1>	
-	rml:logicalSource [ rml:source "source1.csv";
+	rml:logicalSource [ rml:source "/data/source1.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
@@ -29,7 +29,7 @@
 	].		
 
 <#TriplesMap2>
-	rml:logicalSource [ rml:source "source2.csv";
+	rml:logicalSource [ rml:source "/data/source2.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
@@ -47,7 +47,7 @@
 	].	
 					
 <#TriplesMap3>
-	rml:logicalSource [ rml:source "source3.csv";
+	rml:logicalSource [ rml:source "/data/source3.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
@@ -65,7 +65,7 @@
 	].		
 
 <#TriplesMap4>
-	rml:logicalSource [ rml:source "source4.csv";
+	rml:logicalSource [ rml:source "/data/source4.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
@@ -83,7 +83,7 @@
 	].
 
 <#TriplesMap5>	
-	rml:logicalSource [ rml:source "source5.csv";
+	rml:logicalSource [ rml:source "/data/source5.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
