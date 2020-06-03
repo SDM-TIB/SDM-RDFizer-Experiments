@@ -68,7 +68,7 @@
 	rr:predicateObjectMap [
 		rr:predicate iasis:hasCDS;
 		rr:objectMap [ 
-			rrml:reference "cFormat"
+			rml:reference "cFormat"
 		]
 	].		
 
