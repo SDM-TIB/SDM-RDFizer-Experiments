@@ -4,7 +4,7 @@ sed -i 's/enrichment: no/enrichment: yes/g' /scripts/config.ini
 #echo "config,size,type,mapping,results,time">>/results/results-times.csv
 #echo "config,size,type,mapping,run,results,time">>/results/results-times-detail.csv
 declare -a configs=("enrich" "noenrich")
-declare -a sizes=("10k 100k 1M 10M")
+declare -a sizes=("10k" "100k" "1M" "10M")
 declare -a types=("25_10times" "25_20times" "75_10times" "75_20times")
 declare -a mappings=("2TM_joinCondition_differentSource.ttl" "5TM_joinCondition_differentSource.ttl" "10TM_joinCondition_differentSource.ttl")
 
