@@ -14,7 +14,7 @@ do
 	do
 		cp /data/simple/${size}/${type}.csv /data/data.csv
 		total=0
-		for mapping in "${mapping[@]}"
+		for mapping in "${mappings[@]}"
 		do
 			sed -i "s/mappings\/.*.ttl/mappings\/${mapping}/g" /scripts/simple-index.js
 			for j in 1 2 3 4 5

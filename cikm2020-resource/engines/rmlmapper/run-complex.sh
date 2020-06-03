@@ -15,7 +15,7 @@ do
 		cp /data/complex/${size}/${type}_source*.csv /data/
 		rename "s/${type}_//" /data/*.csv
 		total=0
-		for mapping in "${mapping[@]}"
+		for mapping in "${mappings[@]}"
 		do
 			for j in 1 2 3 4 5
 			do
