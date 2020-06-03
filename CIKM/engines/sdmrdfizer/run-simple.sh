@@ -18,10 +18,10 @@ do
 			total=0
 			for mapping in "${mapping[@]}"
 			do
-				sed -i "s/mappings\/.*.rml.ttl/mappings\/${mapping}/g" /sdmrdfizer/config.ini
+				sed -i "s/mappings\/.*.ttl/mappings\/${mapping}/g" /sdmrdfizer/config.ini
 				for j in 1 2 3 4 5
 				do
-					echo "---Running $config size $size in $type for time $j with mapping ${mapping}---"
+					echo "---Running $config size $size in $type for time $j with mapping $mapping---"
 					start=$(date +%s.%N)
 					timeout 5h python3 /sdmrdfizer/rdfizer/run_rdfizer.py /sdmrdfizer/config.ini
 					exit_status=$?
@@ -33,7 +33,7 @@ do
 						break
 					else
 						lines=$(cat "/results/output.nt" | wc -l)
-						echo "$config,$size,$type,$j,$mapping,$lines,$dur">>/results/results-times-detail.csv
+						echo "$config,$size,$type,$mapping,$j,$lines,$dur">>/results/results-times-detail.csv
 						total=$(echo "$total+$dur" | bc)
 						if [ $j -ne 5 ];then
 							rm /results/output.nt
