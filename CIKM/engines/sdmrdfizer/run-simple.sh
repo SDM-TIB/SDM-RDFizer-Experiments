@@ -6,7 +6,7 @@ echo "config,size,type,mapping,run,results,time">>/results/results-times-detail.
 declare -a configs=("enrich" "noenrich")
 declare -a sizes=("10k 100k 1M 10M")
 declare -a types=("25_10times" "25_20times" "75_10times" "75_20times")
-declare -a mappings=("2POM_Normal.ttl" "2TM_reference_sameSource.ttl" "5POM_Normal.ttl" "5TM_reference_sameSource.ttl")
+declare -a mappings=("2POM_Normal.ttl" "2TM_reference_sameSource.ttl" "5POM_Normal.ttl" "5TM_reference_sameSource.ttl" "10POM_Normal.ttl" "10TM_reference_sameSource.ttl")
 
 for config in "${configs[@]}"
 do
@@ -40,8 +40,8 @@ do
 						fi
 					fi
 				done
-				mv /results/output.nt /results/output-$config-$size-$type.nt
-				mv /results/output_datasets_stats.csv /results/stats_output-$type-$i-$j.csv
+				mv /results/output.nt /results/output-$config-$size-$type-$mapping.nt
+				mv /results/output_datasets_stats.csv /results/stats_output-$config-$size-$type-$mapping.csv
 				if (( $(echo "$total > 0" | bc -l) ));then
 					total=$(echo "$total/5" | bc -l)
 					echo "$config,$size,$type,$mapping,$lines,$total">>/results/results-times.csv
