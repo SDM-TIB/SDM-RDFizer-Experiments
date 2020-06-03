@@ -20,32 +20,24 @@
 	rr:predicateObjectMap [
 		rr:predicate iasis:transcript_isRelatedTo_gene;
 		rr:objectMap [
-			rml:reference "Gene name"
+			rr:parentTriplesMap <#TriplesMap2>
 		]
-	];	
-	rr:predicateObjectMap [
-		rr:predicate iasis:gene_isRelatedTo_sample;
-		rr:objectMap [ 
-			rml:reference "ID_sample" 
-		]
-	];
-	rr:predicateObjectMap [
-		rr:predicate iasis:sample_isTakenFrom_tumor;
-		rr:objectMap [ 
-			rml:reference "ID_tumour" 
-		]
-	];
-	rr:predicateObjectMap [
-		rr:predicate iasis:tumor_isTakenFrom_Tissue;
-		rr:objectMap [
-			rml:reference "Primary site" 
-		]
-	];
-	rr:predicateObjectMap [
-		rr:predicate iasis:tissue_hasType;
-		rr:objectMap [
-			rml:reference "Primary histology"
-		]
-	].		
+	].
+
+<#TriplesMap2>
+	rml:logicalSource [ rml:source "data.csv";
+						rml:referenceFormulation ql:CSV 
+						];
+	rr:subjectMap [
+		rr:template "http://project-iasis.eu/Gene/{Gene name}";
+	].
+					
+
+
+
+
+	
+
+
 
 
