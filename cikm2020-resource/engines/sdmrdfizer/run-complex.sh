@@ -1,12 +1,12 @@
 #!/bin/bash
 
 sed -i 's/enrichment: no/enrichment: yes/g' /sdmrdfizer/config.ini
-echo "config,size,type,mapping,results,time">>/results/results-times.csv
-echo "config,size,type,mapping,run,results,time">>/results/results-times-detail.csv
+#echo "config,size,type,mapping,results,time">>/results/results-times.csv
+#echo "config,size,type,mapping,run,results,time">>/results/results-times-detail.csv
 declare -a configs=("enrich" "noenrich")
 declare -a sizes=("10k 100k 1M 10M")
 declare -a types=("25_10times" "25_20times" "75_10times" "75_20times")
-declare -a mappings=("2POM_Normal.ttl" "2TM_reference_sameSource.ttl" "5POM_Normal.ttl" "5TM_reference_sameSource.ttl" "9POM_Normal.ttl" "10TM_reference_sameSource.ttl")
+declare -a mappings=("2TM_joinCondition_differentSource.ttl" "5TM_joinCondition_differentSource.ttl" "10TM_joinCondition_differentSource.ttl")
 
 for config in "${configs[@]}"
 do
@@ -14,7 +14,8 @@ do
 	do
 		for type in "${types[@]}"
 		do
-			cp /data/simple/${size}/${type}.csv /data/data.csv
+			cp /data/complex/${size}/${type}_source*.csv /data/
+			rename "s/${type}_//" /data/*.csv
 			total=0
 			for mapping in "${mapping[@]}"
 			do

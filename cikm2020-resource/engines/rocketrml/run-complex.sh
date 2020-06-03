@@ -1,26 +1,28 @@
 #!/bin/bash
 
+#echo "config,size,type,mapping,results,time">>/results/results-times.csv
+#echo "config,size,type,mapping,run,results,time">>/results/results-times-detail.csv
 
-echo "config,size,type,mapping,results,time">>/results/results-times.csv
-echo "config,size,type,mapping,run,results,time">>/results/results-times-detail.csv
 declare -a sizes=("10k 100k 1M 10M")
 declare -a types=("25_10times" "25_20times" "75_10times" "75_20times")
-declare -a mappings=("2POM_Normal.ttl" "2TM_reference_sameSource.ttl" "5POM_Normal.ttl" "5TM_reference_sameSource.ttl" "9POM_Normal.ttl" "10TM_reference_sameSource.ttl")
-config="rmlmapper"
+declare -a mappings=("2TM_joinCondition_differentSource.ttl" "5TM_joinCondition_differentSource.ttl" "10TM_joinCondition_differentSource.ttl")
+config="rocketrml"
 
 for size in "${sizes[@]}"
 do
 	for type in "${types[@]}"
 	do
-		cp /data/simple/${size}/${type}.csv /data/data.csv
+		cp /data/complex/${size}/${type}_source*.csv /data/
+		rename "s/${type}_//" /data/*.csv
 		total=0
 		for mapping in "${mapping[@]}"
 		do
+			sed -i "s/mappings\/.*.ttl/mappings\/${mapping}/g" /rocketrml/simple-index.js
 			for j in 1 2 3 4 5
 			do
 				echo "---Running $config size $size in $type for time $j with mapping $mapping---"
 				start=$(date +%s.%N)
-				timeout 5h java -jar rmlmapper -m /mappings/${mapping} -o /results/output.nt -d
+				timeout 5h node simple-index.js
 				exit_status=$?
 				finish=$(date +%s.%N)
 				dur=$(echo "$finish - $start" | bc)
