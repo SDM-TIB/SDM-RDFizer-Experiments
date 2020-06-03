@@ -10,7 +10,7 @@
 @prefix iasis: <http://project-iasis.eu/vocab/> .
 @base <http://tib.de/SDM-RDFizer/mapping#> .
 
-<#TriplesMap1>	
+<TriplesMap1>	
 	rml:logicalSource [ rml:source "/data/source1.csv";
 						rml:referenceFormulation ql:CSV 
 						];
@@ -28,7 +28,7 @@
 		];
 	].		
 
-<#TriplesMap2>
+<TriplesMap2>
 	rml:logicalSource [ rml:source "/data/source2.csv";
 						rml:referenceFormulation ql:CSV 
 						];
@@ -46,7 +46,7 @@
 		];
 	].	
 					
-<#TriplesMap3>
+<TriplesMap3>
 	rml:logicalSource [ rml:source "/data/source3.csv";
 						rml:referenceFormulation ql:CSV 
 						];
@@ -64,7 +64,7 @@
 		];
 	].		
 
-<#TriplesMap4>
+<TriplesMap4>
 	rml:logicalSource [ rml:source "/data/source4.csv";
 						rml:referenceFormulation ql:CSV 
 						];
@@ -82,7 +82,7 @@
 		];
 	].
 
-<#TriplesMap5>	
+<TriplesMap5>	
 	rml:logicalSource [ rml:source "/data/source5.csv";
 						rml:referenceFormulation ql:CSV 
 						];
@@ -100,7 +100,7 @@
 		];
 	].	
 
-<#TriplesMap6>
+<TriplesMap6>
 	rml:logicalSource [ rml:source "/data/source6.csv";
 						rml:referenceFormulation ql:CSV 
 						];	
@@ -118,7 +118,7 @@
 		];
 	].			
 
-<#TriplesMap7>
+<TriplesMap7>
 	rml:logicalSource [ rml:source "/data/source7.csv";
 						rml:referenceFormulation ql:CSV 
 						];
@@ -136,7 +136,7 @@
 		];
 	].	
 
-<#TriplesMap8>
+<TriplesMap8>
 	rml:logicalSource [ rml:source "/data/source8.csv";
 						rml:referenceFormulation ql:CSV 
 						];
@@ -154,7 +154,7 @@
 		];
 	].		
 
-<#TriplesMap9>
+<TriplesMap9>
 	rml:logicalSource [ rml:source "/data/source9.csv";
 						rml:referenceFormulation ql:CSV 
 						];
@@ -172,7 +172,7 @@
 		];
 	].				
 
-<#TriplesMap10>
+<TriplesMap10>
 	rml:logicalSource [ rml:source "/data/source10.csv";
 						rml:referenceFormulation ql:CSV 
 						];	

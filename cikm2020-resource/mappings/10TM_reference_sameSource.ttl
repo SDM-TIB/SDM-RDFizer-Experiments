@@ -10,7 +10,7 @@
 @prefix iasis: <http://project-iasis.eu/vocab/> .
 @base <http://tib.de/SDM-RDFizer/mapping#> .
 
-<#TriplesMap1>	
+<TriplesMap1>	
 	rml:logicalSource [ rml:source "/data/data.csv";
 						rml:referenceFormulation ql:CSV 
 						];
@@ -20,11 +20,11 @@
 	rr:predicateObjectMap [
 		rr:predicate iasis:transcript_isRelatedTo_gene;
 		rr:objectMap [
-			rr:parentTriplesMap <#TriplesMap2>
+			rr:parentTriplesMap <TriplesMap2>
 		]
 	].
 
-<#TriplesMap2>
+<TriplesMap2>
 	rml:logicalSource [ rml:source "/data/data.csv";
 						rml:referenceFormulation ql:CSV 
 						];
@@ -34,11 +34,11 @@
 	rr:predicateObjectMap [
 		rr:predicate iasis:gene_isRelatedTo_sample;
 		rr:objectMap [ 
-			rr:parentTriplesMap <#TriplesMap3> 
+			rr:parentTriplesMap <TriplesMap3> 
 		]
 	].
 					
-<#TriplesMap3>
+<TriplesMap3>
 	rml:logicalSource [ rml:source "/data/data.csv";
 						rml:referenceFormulation ql:CSV 
 						];
@@ -48,11 +48,11 @@
 	rr:predicateObjectMap [
 		rr:predicate iasis:sample_isTakenFrom_tumor;
 		rr:objectMap [ 
-			rr:parentTriplesMap <#TriplesMap4>
+			rr:parentTriplesMap <TriplesMap4>
 		]
 	].
 
-<#TriplesMap4>
+<TriplesMap4>
 	rml:logicalSource [ rml:source "/data/data.csv";
 						rml:referenceFormulation ql:CSV 
 						];
@@ -62,11 +62,11 @@
 	rr:predicateObjectMap [
 		rr:predicate iasis:tumor_isTakenFrom_Tissue;
 		rr:objectMap [
-			rr:parentTriplesMap <#TriplesMap5>
+			rr:parentTriplesMap <TriplesMap5>
 		]
 	].
 
-<#TriplesMap5>	
+<TriplesMap5>	
 	rml:logicalSource [ rml:source "/data/data.csv";
 						rml:referenceFormulation ql:CSV 
 						];
@@ -76,11 +76,11 @@
 	rr:predicateObjectMap [
 		rr:predicate iasis:tissue_hasType;
 		rr:objectMap [
-			rr:parentTriplesMap <#TriplesMap6>
+			rr:parentTriplesMap <TriplesMap6>
 		]
 	].
 
-<#TriplesMap6>
+<TriplesMap6>
 	rml:logicalSource [ rml:source "/data/data.csv";
 						rml:referenceFormulation ql:CSV 
 						];	
@@ -90,11 +90,11 @@
 	rr:predicateObjectMap [
 		rr:predicate iasis:mentionedIn_publication;
 		rr:objectMap [ 
-			rr:parentTriplesMap <#TriplesMap7>
+			rr:parentTriplesMap <TriplesMap7>
 		]
 	].		
 
-<#TriplesMap7>
+<TriplesMap7>
 	rml:logicalSource [ rml:source "/data/data.csv";
 						rml:referenceFormulation ql:CSV 
 						];
@@ -104,11 +104,11 @@
 	rr:predicateObjectMap [
 		rr:predicate iasis:isRelatedTo;
 		rr:objectMap [ 
-			rr:parentTriplesMap <#TriplesMap8>
+			rr:parentTriplesMap <TriplesMap8>
 		]
 	].	
 
-<#TriplesMap8>
+<TriplesMap8>
 	rml:logicalSource [ rml:source "/data/data.csv";
 						rml:referenceFormulation ql:CSV 
 						];
@@ -118,11 +118,11 @@
 	rr:predicateObjectMap [
 		rr:predicate iasis:hasVariation;
 		rr:objectMap [ 
-			rr:parentTriplesMap <#TriplesMap9>
+			rr:parentTriplesMap <TriplesMap9>
 		]
 	].	
 
-<#TriplesMap9>
+<TriplesMap9>
 	rml:logicalSource [ rml:source "/data/data.csv";
 						rml:referenceFormulation ql:CSV 
 						];
@@ -132,11 +132,11 @@
 	rr:predicateObjectMap [
 		rr:predicate iasis:hasCDS;
 		rr:objectMap [ 
-			rr:parentTriplesMap <#TriplesMap10>
+			rr:parentTriplesMap <TriplesMap10>
 		]
 	].		
 
-<#TriplesMap10>
+<TriplesMap10>
 	rml:logicalSource [ rml:source "/data/data.csv";
 						rml:referenceFormulation ql:CSV 
 						];	
