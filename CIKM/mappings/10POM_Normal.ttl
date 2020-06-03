@@ -16,7 +16,6 @@
 						];
 	rr:subjectMap [
 		rr:template "http://project-iasis.eu/Transcript/{Accession Number}";
-		rr:class iasis:Transcript
 	];
 	rr:predicateObjectMap [
 		rr:predicate iasis:transcript_isRelatedTo_gene;

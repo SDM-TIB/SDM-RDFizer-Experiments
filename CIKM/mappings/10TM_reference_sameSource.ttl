@@ -16,7 +16,6 @@
 						];
 	rr:subjectMap [
 		rr:template "http://project-iasis.eu/Transcript/{Accession Number}";
-		rr:class iasis:Transcript
 	];
 	rr:predicateObjectMap [
 		rr:predicate iasis:transcript_isRelatedTo_gene;
@@ -31,7 +30,6 @@
 						];
 	rr:subjectMap [
 		rr:template "http://project-iasis.eu/Gene/{Gene name}";
-		rr:class iasis:Gene
 	];
 	rr:predicateObjectMap [
 		rr:predicate iasis:gene_isRelatedTo_sample;
@@ -46,7 +44,6 @@
 						];
 	rr:subjectMap [
 		rr:template "http://project-iasis.eu/Sample/{ID_sample}";
-		rr:class iasis:Sample
 	];
 	rr:predicateObjectMap [
 		rr:predicate iasis:sample_isTakenFrom_tumor;
@@ -61,7 +58,6 @@
 						];
 	rr:subjectMap [
 		rr:template "http://project-iasis.eu/Tumor/{ID_tumour}";
-		rr:class iasis:Tumor;
 	];
 	rr:predicateObjectMap [
 		rr:predicate iasis:tumor_isTakenFrom_Tissue;
@@ -76,7 +72,6 @@
 						];
 	rr:subjectMap [
 		rr:template "http://project-iasis.eu/Tissue/{Primary site}";
-		rr:class iasis:Tissue
 	];
 	rr:predicateObjectMap [
 		rr:predicate iasis:tissue_hasType;
@@ -91,7 +86,6 @@
 						];	
 	rr:subjectMap [
 		rr:template "http://project-iasis.eu/TissueType/{Primary histology}";
-		rr:class iasis:TissueType
 	];
 	rr:predicateObjectMap [
 		rr:predicate iasis:mentionedIn_publication;
@@ -106,7 +100,6 @@
 						];
 	rr:subjectMap [
 		rr:template "http://project-iasis.eu/Publication/{Pubmed_PMID}";
-		rr:class iasis:Publication;
 	];
 	rr:predicateObjectMap [
 		rr:predicate iasis:isRelatedTo;
@@ -121,7 +114,6 @@
 						];
 	rr:subjectMap [
 		rr:template "http://project-iasis.eu/GenomicPosition/{Mutation genome position}";
-		rr:class iasis:GenomicPosition;
 	];
 	rr:predicateObjectMap [
 		rr:predicate iasis:hasVariation;
@@ -136,7 +128,6 @@
 						];
 	rr:subjectMap [
 		rr:template "http://project-iasis.eu/Variation/{MUTATION_ID}";
-		rr:class iasis:Variation;
 	];
 	rr:predicateObjectMap [
 		rr:predicate iasis:hasCDS;
@@ -151,7 +142,6 @@
 						];	
 	rr:subjectMap [
 		rr:template "http://project-iasis.eu/Variation/{cFormat}";
-		rr:class iasis:Variation;
 	].
 
 
