@@ -23,8 +23,8 @@
 		rr:objectMap [
 			rr:parentTriplesMap <TriplesMap2>;
 			rr:joinCondition [
-				rr:child "";
-				rr:parent "";
+				rr:child "HGNC ID";
+				rr:parent "HGNC ID";
 			];
 		];
 	].		
@@ -42,8 +42,8 @@
 		rr:objectMap [
 			rr:parentTriplesMap <TriplesMap3>;
 			rr:joinCondition [
-				rr:child "";
-				rr:parent "";
+				rr:child "Gene CDS length";
+				rr:parent "Gene CDS length";
 			];
 		];
 	].	
@@ -61,8 +61,8 @@
 		rr:objectMap [
 			rr:parentTriplesMap <TriplesMap4>;
 			rr:joinCondition [
-				rr:child "";
-				rr:parent "";
+				rr:child "HGNC ID";
+				rr:parent "HGNC ID";
 			];
 		];
 	].		
@@ -80,8 +80,8 @@
 		rr:objectMap [
 			rr:parentTriplesMap <TriplesMap5>;
 			rr:joinCondition [
-				rr:child "";
-				rr:parent "";
+				rr:child "Gene CDS length";
+				rr:parent "Gene CDS length";
 			];
 		];
 	].
@@ -99,8 +99,8 @@
 		rr:objectMap [
 			rr:parentTriplesMap <TriplesMap6>;
 			rr:joinCondition [
-				rr:child "";
-				rr:parent "";
+				rr:child "Mutation somatic status";
+				rr:parent "Mutation somatic status";
 			];
 		];
 	].	
@@ -118,8 +118,8 @@
 		rr:objectMap [
 			rr:parentTriplesMap <TriplesMap7>;
 			rr:joinCondition [
-				rr:child "";
-				rr:parent "";
+				rr:child "HGNC ID";
+				rr:parent "HGNC ID";
 			];
 		];
 	].			
@@ -137,8 +137,8 @@
 		rr:objectMap [
 			rr:parentTriplesMap <TriplesMap8>;
 			rr:joinCondition [
-				rr:child "";
-				rr:parent "";
+				rr:child "Mutation Description";
+				rr:parent "Mutation Description";
 			];
 		];
 	].	
@@ -156,8 +156,8 @@
 		rr:objectMap [
 			rr:parentTriplesMap <TriplesMap9>;
 			rr:joinCondition [
-				rr:child "";
-				rr:parent "";
+				rr:child "Gene CDS length";
+				rr:parent "Gene CDS length";
 			];
 		];
 	].		
@@ -175,8 +175,8 @@
 		rr:objectMap [
 			rr:parentTriplesMap <TriplesMap10>;
 			rr:joinCondition [
-				rr:child "";
-				rr:parent "";
+				rr:child "Mutation somatic status";
+				rr:parent "Mutation somatic status";
 			];
 		];
 	].				

@@ -11,7 +11,7 @@
 @prefix iasis: <http://project-iasis.eu/vocab/> .
 
 <#TriplesMap1>	
-	rml:logicalSource [ rml:source "source1.csv";
+	rml:logicalSource [ rml:source "data.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
@@ -26,7 +26,7 @@
 	].
 
 <#TriplesMap2>
-	rml:logicalSource [ rml:source "source1.csv";
+	rml:logicalSource [ rml:source "data.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
@@ -41,7 +41,7 @@
 	].
 					
 <#TriplesMap3>
-	rml:logicalSource [ rml:source "source1.csv";
+	rml:logicalSource [ rml:source "data.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
@@ -56,7 +56,7 @@
 	].
 
 <#TriplesMap4>
-	rml:logicalSource [ rml:source "source1.csv";
+	rml:logicalSource [ rml:source "data.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
@@ -71,7 +71,7 @@
 	].
 
 <#TriplesMap5>	
-	rml:logicalSource [ rml:source "source1.csv";
+	rml:logicalSource [ rml:source "data.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
@@ -86,7 +86,7 @@
 	].
 
 <#TriplesMap6>
-	rml:logicalSource [ rml:source "source1.csv";
+	rml:logicalSource [ rml:source "data.csv";
 						rml:referenceFormulation ql:CSV 
 						];	
 	rr:subjectMap [
@@ -101,7 +101,7 @@
 	].		
 
 <#TriplesMap7>
-	rml:logicalSource [ rml:source "source1.csv";
+	rml:logicalSource [ rml:source "data.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
@@ -116,7 +116,7 @@
 	].	
 
 <#TriplesMap8>
-	rml:logicalSource [ rml:source "source1.csv";
+	rml:logicalSource [ rml:source "data.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
@@ -131,7 +131,7 @@
 	].	
 
 <#TriplesMap9>
-	rml:logicalSource [ rml:source "source1.csv";
+	rml:logicalSource [ rml:source "data.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
@@ -146,7 +146,7 @@
 	].		
 
 <#TriplesMap10>
-	rml:logicalSource [ rml:source "source1.csv";
+	rml:logicalSource [ rml:source "data.csv";
 						rml:referenceFormulation ql:CSV 
 						];	
 	rr:subjectMap [
