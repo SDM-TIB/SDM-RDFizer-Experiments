@@ -14,6 +14,7 @@ do
 	do
 		for type in "${types[@]}"
 		do
+			rm /data/*.csv
 			cp /data/complex/${size}/${type}_source*.csv /data/
 			rename "s/${type}_//" /data/*.csv
 			total=0

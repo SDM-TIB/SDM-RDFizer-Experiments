@@ -12,6 +12,7 @@ for size in "${sizes[@]}"
 do
 	for type in "${types[@]}"
 	do
+		rm /data/*.csv
 		cp /data/simple/${size}/${type}.csv /data/data.csv
 		total=0
 		for mapping in "${mappings[@]}"
