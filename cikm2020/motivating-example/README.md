@@ -6,6 +6,6 @@ To run the motivating example, install docker in your machine and then:
 `curl http://localhost:4000/graph_creation/data/config.ini`
  		
 
-Your results will be in the output folder (automitically created in this folder from the docker image)
+Your results will be in the output folder (automatically created in this folder from the docker image)
 
 
