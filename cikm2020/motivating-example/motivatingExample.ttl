@@ -10,7 +10,7 @@
 @prefix iasis: <http://project-iasis.eu/vocab/> .
 
 <TriplesMap1>	
-	rml:logicalSource [ rml:source "/Users/maria-esthervidal/Documents/docker/rdfizer/rdfizer/cikm/dataset1_100recordsSample.csv";
+	rml:logicalSource [ rml:source "/data/dataset1_100recordsSample.csv";
 						rml:referenceFormulation ql:CSV
 						];
 	rr:subjectMap [
@@ -30,7 +30,7 @@
 		]
 	].		
 <TriplesMap2>	
-	rml:logicalSource [ rml:source "/Users/maria-esthervidal/Documents/docker/rdfizer/rdfizer/cikm/dataset1_100recordsSample.csv";
+	rml:logicalSource [ rml:source "/data/dataset1_100recordsSample.csv";
 						rml:referenceFormulation ql:CSV
 						];
 	rr:subjectMap [
@@ -48,7 +48,7 @@
 		];
 	].	
 <TriplesMap3>	
-	rml:logicalSource [ rml:source "/Users/maria-esthervidal/Documents/docker/rdfizer/rdfizer/cikm/dataset2_100recordsSample.csv";
+	rml:logicalSource [ rml:source "/data/dataset2_100recordsSample.csv";
 						rml:referenceFormulation ql:CSV
 						];
 	rr:subjectMap [
