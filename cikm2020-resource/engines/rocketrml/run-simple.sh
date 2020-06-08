@@ -4,8 +4,8 @@ echo "config,size,type,mapping,results,time">>/results/results-times.csv
 echo "config,size,type,mapping,run,results,time">>/results/results-times-detail.csv
 
 declare -a sizes=("10k" "100k" "1M")
-declare -a types=("25_10times" "25_20times" "75_10times" "75_20times")
-declare -a mappings=("1POM_Normal.ttl" "2TM_reference_sameSource.ttl" "4POM_Normal.ttl" "5TM_reference_sameSource.ttl")
+declare -a types=("25_20times" "75_20times")
+declare -a mappings=("1POM_Normal.ttl" "4POM_Normal.ttl")
 config="rocketrml"
 
 for size in "${sizes[@]}"
