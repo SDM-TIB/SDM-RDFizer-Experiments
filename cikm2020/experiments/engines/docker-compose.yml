@@ -1,0 +1,29 @@
+version: "2"
+services:
+  rmlmapper:
+    container_name: rmlmapper
+    image: oegdataintegration/rmlmapper:4.7
+    shm_size: '50gb'
+    volumes:
+      - ../data:/data
+      - ../results/rmlmapper:/results
+      - ../mappings:/mappings
+      - ./rmlmapper:/scripts
+  rocketrml:
+    container_name: rocketrml
+    image: oegdataintegration/rocketrml:1.7.0
+    shm_size: '50gb'
+    volumes:
+      - ../data:/data
+      - ../results/rocketrml:/results
+      - ../mappings:/mappings
+      - ./rocketrml:/scripts
+  sdmrdfizer:
+    container_name: sdmrdfizer
+    image: oegdataintegration/sdmrdfizer:3.2
+    shm_size: '50gb'
+    volumes:
+      - ../data:/data
+      - ../results/sdmrdfizer:/results
+      - ../mappings:/mappings
+      - ./sdmrdfizer:/scripts
