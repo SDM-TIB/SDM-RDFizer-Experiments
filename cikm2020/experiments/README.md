@@ -6,7 +6,7 @@
 3) Engines: Docker compose file with images of RMLMapper v4.7, RocketRML v1.7.0 and SDM-RDFizer v3.2
 
 ## How to run it?
-1) Go to data folder and run `bash download.sh`
+1) Download [data](https://doi.org/10.6084/m9.figshare.14838342.v1)
 2) Go to engines folder and run `docker-compose up -d`
 3) For run each experiment run `docker exec -it [rmlmapper|sdmrdfizer|rocketrml] bash /scripts/run-[simple|medium|complex].sh`
 4) Results available at results folder.
