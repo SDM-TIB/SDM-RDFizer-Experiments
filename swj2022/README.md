@@ -14,4 +14,4 @@ Use the generator provided by the benchmark (docker is required). Scale factors 
 
 ## Motivating example
 
-- Data and mappings are provided in the folder `motivated-example`.
+- Data and mappings are provided in the folder `motivating-example`.
