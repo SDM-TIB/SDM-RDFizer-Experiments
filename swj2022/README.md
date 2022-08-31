@@ -3,7 +3,7 @@
 
 ## SDM-Genomics-Dataset
 
-- Data can be download in the following link: https://doi.org/10.6084/m9.figshare.17142371.v1
+- Data can be download in the following link: https://doi.org/10.6084/m9.figshare.17142371.v2
 - Mappings and their explanations are located in the folder `sdm-genomics-mappings`.
 
 
