@@ -15,3 +15,7 @@ Use the generator provided by the benchmark (docker is required). Scale factors 
 ## Motivating example
 
 - Data and mappings are provided in the folder `motivating-example`.
+
+## Result Figures
+
+![Overview of Results (Execution Time Comparison)](https://raw.githubusercontent.com/SDM-TIB/SDM-RDFizer-Experiments/master/swj2022/figures/10k_25.png "Results for 10k with 25% duplicate rate.") | ![Overview of Results (Execution Time Comparison)](https://raw.githubusercontent.com/SDM-TIB/SDM-RDFizer-Experiments/master/swj2022/figures/10k_75.png "Results for 10k with 75% duplicate rate.")
